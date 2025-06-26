@@ -6,14 +6,8 @@ import Footer from "./MyComponents/Footer"
 import AddTodo from "./MyComponents/AddTodo"
 import About from "./MyComponents/About"
 import { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,  // <-- Add this
-  Route,
-  Link
-} from "react-router-dom"
 
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   let initTodo;
   // get item returns null
@@ -75,18 +69,20 @@ useEffect(() => {
 
   
 
-  return (
-    <Router>
+return (
+    <Router basename="/React-My-Todos-List">
       <Header title="My Todos List" searchBar={false} />
 
-
       <Routes>
-        <Route path="/" element={
-          <>
-            <AddTodo addTodo={addTodo} />
-            <Todos todos={todos} onDelete={onDelete} />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <AddTodo addTodo={addTodo} />
+              <Todos todos={todos} onDelete={onDelete} />
+            </>
+          }
+        />
         <Route path="/about" element={<About />} />
       </Routes>
 

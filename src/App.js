@@ -59,8 +59,11 @@ function App() {
           path="/"
           element={
             <>
-              <AddTodo addTodo={addTodo} />
-              <Todos todos={todos} onDelete={onDelete} />
+             <div className="content-container">
+          <AddTodo addTodo={addTodo} />
+          <Todos todos={todos} onDelete={onDelete} />
+</div>
+
             </>
           }
         />

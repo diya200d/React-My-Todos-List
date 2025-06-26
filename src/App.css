@@ -12,6 +12,26 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* Page background */
+body {
+  background: linear-gradient(to right, #dbeafe, #f0fdfa); /* soft blue to green */
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Content container for better contrast */
+.content-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .App-header {
   background-color: #282c34;

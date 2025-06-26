@@ -2,6 +2,7 @@
   "name": "todos_list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://diya200d.github.io/React-My-Todos-List",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

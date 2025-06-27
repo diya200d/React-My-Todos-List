@@ -4,6 +4,8 @@ import Todos from "./MyComponents/Todos";
 import Footer from "./MyComponents/Footer";
 import AddTodo from "./MyComponents/AddTodo";
 import About from "./MyComponents/About";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
